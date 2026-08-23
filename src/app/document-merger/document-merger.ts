@@ -20,7 +20,7 @@ export class DocumentMerger {
 
   private downloadUrl: string | null = null;
 
-  private apiUrl = 'https://docfusion-backend-e4d1.onrender.com';
+  private apiUrl = 'https://docfusion-backend-e4d1.onrender.com/api/merge-pdfs';
 
   constructor(
     private http: HttpClient,
