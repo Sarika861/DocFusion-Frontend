@@ -1,12 +1,12 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { DocumentMerger } from './document-merger/document-merger';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  standalone: true,
+  imports: [DocumentMerger],
+  templateUrl: './app.html'
 })
 export class App {
-  protected readonly title = signal('frontend');
+  title = 'frontend';
 }
